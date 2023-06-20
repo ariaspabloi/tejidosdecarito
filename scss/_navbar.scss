@@ -1,0 +1,44 @@
+.navbar {
+  .nav-link {
+    color: #04111f;
+    font-family: "Metrophobic", sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    img {
+      height: 96px;
+      width: 96px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-brand {
+      position: absolute;
+    }
+    .nav-link {
+      font-size: 0.8em;
+      font-weight: 400;
+      margin: 0 0.4em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

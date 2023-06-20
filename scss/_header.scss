@@ -1,0 +1,89 @@
+.header {
+  height: 55vh;
+  padding-top: 5rem;
+
+  .header__content {
+    color: #12466a;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    .header__subtitle {
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      line-height: 1.4em;
+      text-transform: uppercase;
+    }
+    .header__title {
+      font-size: 2.4em;
+      font-weight: 500;
+      letter-spacing: 0em;
+      line-height: 1.1em;
+    }
+    .header__button {
+      background-color: #fff;
+      border-color: #fff;
+      border-radius: 300px;
+      border-width: 0;
+      box-shadow: 0 2px 0 0 #ebebeb;
+      color: #5c5c5c;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding-bottom: 0.7rem;
+      padding-top: 0.6rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.1s background-color linear;
+      width: 12rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    height: 60vh;
+    .header__content {
+      padding-left: 6rem;
+      width: 75%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .header {
+    height: 90vh;
+    .header__content {
+      padding-left: 6rem;
+      padding-top: 14vh;
+      width: 60%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .header {
+    height: 100vh;
+    .header__content {
+      margin-left: 8rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    .header__content {
+      margin-left: 20vw;
+    }
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
