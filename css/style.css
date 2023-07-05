@@ -154,8 +154,8 @@ body {
     gap: 1em; }
     #services .service {
       width: 30vw; }
-    #services .service__box {
-      padding: 0; } }
+      #services .service .service__box {
+        padding: 0; } }
 
 @media (min-width: 992px) {
   #services {

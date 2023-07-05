@@ -35,9 +35,9 @@
     gap: 1em;
     .service {
       width: 30vw;
-    }
-    .service__box {
-      padding: 0;
+      .service__box {
+        padding: 0;
+      }
     }
   }
 }
