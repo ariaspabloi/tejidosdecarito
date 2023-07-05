@@ -1,0 +1,50 @@
+#services {
+  padding: 4em 0;
+  .service {
+    width: 70vw;
+    height: auto;
+    .service__title {
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.9em;
+      line-height: 1.4em;
+      letter-spacing: 0.07em;
+      color: #5c5c5c;
+      font-weight: bold;
+    }
+    .service__image {
+      margin: 1em 0;
+    }
+    .service__box {
+      height: 8em;
+      padding: 0 3em;
+      .service__description {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.9em;
+        letter-spacing: 0.3px;
+        line-height: 1.6em;
+        color: #5c5c5c;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #services {
+    gap: 1em;
+    .service {
+      width: 30vw;
+    }
+    .service__box {
+      padding: 0;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #services {
+    padding: 4em 4em;
+  }
+}

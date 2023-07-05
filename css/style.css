@@ -58,7 +58,7 @@ body {
     margin: 0 0.4em; } }
 
 .header {
-  height: 55vh;
+  min-height: 55vh;
   padding-top: 5rem; }
   .header .header__content {
     color: #12466a;
@@ -123,6 +123,44 @@ body {
     margin-left: 20vw; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
+#services {
+  padding: 4em 0; }
+  #services .service {
+    width: 70vw;
+    height: auto; }
+    #services .service .service__title {
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.9em;
+      line-height: 1.4em;
+      letter-spacing: 0.07em;
+      color: #5c5c5c;
+      font-weight: bold; }
+    #services .service .service__image {
+      margin: 1em 0; }
+    #services .service .service__box {
+      height: 8em;
+      padding: 0 3em; }
+      #services .service .service__box .service__description {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.9em;
+        letter-spacing: 0.3px;
+        line-height: 1.6em;
+        color: #5c5c5c; }
+
+@media (min-width: 768px) {
+  #services {
+    gap: 1em; }
+    #services .service {
+      width: 30vw; }
+    #services .service__box {
+      padding: 0; } }
+
+@media (min-width: 992px) {
+  #services {
+    padding: 4em 4em; } }
+
 #gallery {
   height: 40vh; }
 
