@@ -1,0 +1,35 @@
+.faq {
+  .accordion-item {
+    background-color: transparent;
+  }
+  .accordion-header {
+    .collapsed {
+      background-color: transparent;
+    }
+    button {
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 0.7em;
+      line-height: initial;
+      color: #444444;
+    }
+  }
+  .accordion-body {
+    background-color: $color-background-even;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 1em;
+    border-radius: 2px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+}

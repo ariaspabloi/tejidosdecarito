@@ -1,0 +1,45 @@
+section {
+  padding: 10vh 6vw;
+  .title {
+    width: 100%;
+    color: $color_title;
+    margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    font-size: 1.8em;
+    white-space: normal;
+    span {
+      color: $color-title-accent;
+    }
+  }
+}
+
+section:nth-child(even) {
+  .title {
+    text-align: start;
+    padding-left: 16%;
+  }
+
+  background-color: $color-background-even;
+  h3,
+  p {
+    color: $color-text-even !important;
+  }
+}
+
+section:nth-child(odd) {
+  .title {
+    text-align: end;
+    padding-right: 16%;
+  }
+
+  background-color: $color-background-odd !important;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 10vh 18vw;
+  }
+}

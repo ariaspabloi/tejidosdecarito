@@ -1,3 +1,40 @@
-#gallery {
-  height: 40vh;
+.gallery {
+  .carousel {
+    padding: 0vh;
+    .carousel-inner {
+      border-radius: 8px;
+    }
+    button {
+      color: red;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    .carousel {
+      padding: 2em;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .gallery {
+    .carousel {
+      padding: 0em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    .carousel {
+      margin: 4em;
+    }
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }

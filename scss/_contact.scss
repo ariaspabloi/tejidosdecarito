@@ -1,0 +1,38 @@
+.contact {
+  gap: 2.5rem;
+  height: 75vh;
+  h2.contact__title {
+    text-align: center;
+    padding: 0;
+  }
+  .contact__button {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 300px;
+    border-width: 0;
+    box-shadow: 0 2px 0 0 #ebebeb;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.1s background-color linear;
+  }
+  .contact__img {
+    height: 100%;
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__box {
+    .contact__img {
+      width: 280px;
+    }
+  }
+}
