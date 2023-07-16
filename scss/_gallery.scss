@@ -4,9 +4,6 @@
     .carousel-inner {
       border-radius: 8px;
     }
-    button {
-      color: red;
-    }
   }
 }
 
@@ -37,4 +34,9 @@
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .gallery {
+    .carousel {
+      margin: 6em;
+    }
+  }
 }
