@@ -1,4 +1,10 @@
 .navbar {
+  background: $color-background-odd;
+  height: 80px;
+  .container-fluid {
+    background: $color-background-odd;
+    padding: 1vh 6vw;
+  }
   .nav-link {
     color: #04111f;
     font-family: "Metrophobic", sans-serif;
@@ -10,22 +16,24 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .navbar-brand {
+    img {
+      height: 100%;
+    }
+  }
 }
 
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
-  .navbar-brand {
-    img {
-      height: 96px;
-      width: 96px;
-    }
-  }
 }
 
 @media (min-width: 992px) {
   .navbar {
+    .container-fluid {
+      padding: 0 10vw;
+    }
     .navbar-brand {
       position: absolute;
     }
