@@ -133,6 +133,8 @@ body {
       text-transform: uppercase;
       transition: 0.1s background-color linear;
       width: 12rem; }
+    .header .header__content .header__button:hover {
+      color: #ff47a7; }
 
 @media (min-width: 576px) {
   .header {
@@ -261,7 +263,7 @@ body {
     border-radius: 300px;
     border-width: 0;
     box-shadow: 0 2px 0 0 #ebebeb;
-    color: #5c5c5c;
+    color: #12466a;
     cursor: pointer;
     font-size: 1em;
     font-weight: bold;
@@ -272,6 +274,12 @@ body {
     text-align: center;
     text-transform: uppercase;
     transition: 0.1s background-color linear; }
+  .contact .contact__button:hover {
+    color: #ff47a7; }
+  .contact .contact__mail {
+    margin-top: 6px;
+    font-size: 0.7em;
+    letter-spacing: 1.5px; }
   .contact .contact__img {
     height: 100%;
     width: 200px; }
@@ -283,12 +291,11 @@ body {
 .footer {
   background-color: #fafafa;
   min-height: 20vh; }
-  .footer .footer__email {
+  .footer .footer__rights {
     margin: auto;
-    font-size: 1em;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.07em;
     line-height: 1.4em;
-    font-size: 0.7em;
+    font-size: 0.5em;
     color: #5c5c5c; }

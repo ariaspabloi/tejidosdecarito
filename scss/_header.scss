@@ -41,6 +41,10 @@
       transition: 0.1s background-color linear;
       width: 12rem;
     }
+
+    .header__button:hover {
+      color: $color-title-accent;
+    }
   }
 }
 

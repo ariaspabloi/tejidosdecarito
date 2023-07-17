@@ -11,7 +11,7 @@
     border-radius: 300px;
     border-width: 0;
     box-shadow: 0 2px 0 0 #ebebeb;
-    color: #5c5c5c;
+    color: $color_title;
     cursor: pointer;
     font-size: 1em;
     font-weight: bold;
@@ -22,6 +22,14 @@
     text-align: center;
     text-transform: uppercase;
     transition: 0.1s background-color linear;
+  }
+  .contact__button:hover {
+    color: $color-title-accent;
+  }
+  .contact__mail {
+    margin-top: 6px;
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
   }
   .contact__img {
     height: 100%;
