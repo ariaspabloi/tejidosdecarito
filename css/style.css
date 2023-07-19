@@ -257,23 +257,6 @@ body {
   .contact h2.contact__title {
     text-align: center;
     padding: 0; }
-  .contact .contact__button {
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 300px;
-    border-width: 0;
-    box-shadow: 0 2px 0 0 #ebebeb;
-    color: #12466a;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 1.5em;
-    padding-bottom: 1rem;
-    padding-top: 0.9rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.1s background-color linear; }
   .contact .contact__button:hover {
     color: #ff47a7; }
   .contact .contact__mail {
@@ -283,10 +266,31 @@ body {
   .contact .contact__img {
     height: 100%;
     width: 200px; }
+  .contact form {
+    width: 100%; }
+    .contact form button {
+      background-color: #fff;
+      border-color: #fff;
+      border-radius: 300px;
+      border-width: 0;
+      box-shadow: 0 2px 0 0 #ebebeb;
+      color: #12466a;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 1.5em;
+      padding-bottom: 1rem;
+      padding-top: 0.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.1s background-color linear; }
 
 @media (min-width: 992px) {
-  .contact__box .contact__img {
-    width: 280px; } }
+  .contact .contact__box .contact__img {
+    width: 280px; }
+  .contact form {
+    width: 50%; } }
 
 .footer {
   background-color: #fafafa;

@@ -5,24 +5,7 @@
     text-align: center;
     padding: 0;
   }
-  .contact__button {
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 300px;
-    border-width: 0;
-    box-shadow: 0 2px 0 0 #ebebeb;
-    color: $color_title;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 1.5em;
-    padding-bottom: 1rem;
-    padding-top: 0.9rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.1s background-color linear;
-  }
+
   .contact__button:hover {
     color: $color-title-accent;
   }
@@ -35,12 +18,39 @@
     height: 100%;
     width: 200px;
   }
+  form {
+    width: 100%;
+    button {
+      background-color: #fff;
+      border-color: #fff;
+      border-radius: 300px;
+      border-width: 0;
+      box-shadow: 0 2px 0 0 #ebebeb;
+      color: $color_title;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 1.5em;
+      padding-bottom: 1rem;
+      padding-top: 0.9rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.1s background-color linear;
+    }
+  }
 }
 
 @media (min-width: 992px) {
-  .contact__box {
-    .contact__img {
-      width: 280px;
+  .contact {
+    .contact__box {
+      .contact__img {
+        width: 280px;
+      }
+    }
+
+    form {
+      width: 50%;
     }
   }
 }
