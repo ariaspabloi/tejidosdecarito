@@ -538,12 +538,13 @@
             /></a>
           </div>
           <h2 class="contact__title title">.... o envíanos un mensaje</h2>
-          <form action="https://formspree.io/f/xjvqkylq" method="POST">
+          <form id="contactForm">
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
                 >Nombre</label
               >
               <input
+                id="contactName"
                 type="text"
                 name="nombre"
                 class="form-control"
@@ -555,6 +556,7 @@
                 >Correo electrónico</label
               >
               <input
+                id="contactEmail"
                 type="email"
                 name="email"
                 class="form-control"
@@ -566,13 +568,16 @@
                 >Consulta</label
               >
               <textarea
+                id="contactMessage"
                 name="mensaje"
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="4"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="button" onclick="submitForm()">Enviar</button>
+
+            <div class="mt-5" id="liveAlertPlaceholder"></div>
           </form>
         </div>
       </section>
@@ -662,5 +667,62 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [
+          `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          "</div>",
+        ].join("");
+
+        alertPlaceholder.append(wrapper);
+      };
+
+      function submitForm() {
+        let name = document.getElementById("contactName").value;
+        let email = document.getElementById("contactEmail").value;
+        let message = document.getElementById("contactMessage").value;
+
+        let formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("message", message);
+
+        fetch("https://formspree.io/f/xjvqkylq", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: formData,
+        })
+          .then(function (response) {
+            if (response.ok) {
+              document.getElementById("contactName").value = "";
+              document.getElementById("contactEmail").value = "";
+              document.getElementById("contactMessage").value = "";
+              appendAlert("Mensaje enviado", "success");
+              setTimeout(() => (alertPlaceholder.innerHTML = ""), 1250);
+            } else {
+              alert(
+                appendAlert(
+                  "Error al enviar el mensaje, por favor revisar los campos e intentar nuevamente",
+                  "warning"
+                )
+              );
+            }
+          })
+          .catch(function (error) {
+            alert(
+              appendAlert(
+                "Error al enviar el mensaje, por favor revisar los campos e intentar nuevamente",
+                "warning"
+              )
+            );
+          });
+      }
+    </script>
   </body>
 </html>
