@@ -524,7 +524,7 @@
           <div
             class="contact__rss d-flex flex-column flex-md-row justify-content-evenly w-100 mb-5"
           >
-            <a href="www.facebook.com/tejidosdecarito"
+            <a href="https://www.facebook.com/tejidosdecarito/"
               ><img
                 class="contact__img"
                 src="./assets/img/facebook.png"
@@ -681,6 +681,10 @@
         let name = document.getElementById("contactName").value;
         let email = document.getElementById("contactEmail").value;
         let message = document.getElementById("contactMessage").value;
+        if (!name || !email || !message) {
+          appendAlert("Faltan campos por ingresar", "warning");
+          return;
+        }
 
         let formData = new FormData();
         formData.append("name", name);

@@ -40,6 +40,14 @@
       transition: 0.1s background-color linear;
     }
   }
+  #liveAlertPlaceholder {
+    button {
+      margin: 6px;
+    }
+    .alert {
+      padding: 32px 0;
+    }
+  }
 }
 
 @media (min-width: 992px) {
